@@ -109,12 +109,74 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;"></p>
-                      <button type="button" class="btn btn-warning">Reserve a Table</button>
+                    <a data-toggle="modal" data-target="#reserveModal">
+                      <button type="button" class="btn btn-warning">Reserve a Table</button></a>
                 </div>
             </div>
         </div>
     </header>
 
+    <div id="reserveModal" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+       <!-- Modal content-->
+       <div class="modal-content"  style="background-color: #999">
+           <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times
+                  ;</button>
+               <h4 class="modal-title">Reserve a Table </h4>
+           </div>
+           <div class="modal-body">
+             <form class="form-inline" role="reserve">
+                <div class="form-group">
+                    <label>
+                      <div class="col-xsm-12 col-sm-4">Number of Guests</div>
+                      <div class="col-xsm-12 col-sm-8">
+                        <label class="radio-inline"><input type="radio" name="People" value="1">1</label>
+                        <label class="radio-inline"><input type="radio" name="People" value="2">2</label>
+                        <label class="radio-inline"><input type="radio" name="People" value="3">3</label>
+                        <label class="radio-inline"><input type="radio" name="People" value="4">4</label>
+                        <label class="radio-inline"><input type="radio" name="People" value="5">5</label>
+                        <label class="radio-inline"><input type="radio" name="People" value="6">6</label>
+                      </div>
+                    </label><br>
+                    <label class="btn btn-danger">
+                      <input type="radio" name="smoke" autocomplete="off"> Smoking
+                    </label>
+                    <label class="btn btn-success">
+                      <input type="radio" name="smoke" autocomplete="off"> Non-Smoking
+                    </label>
+                    <br>
+                    <label>
+                      <div class="col-xsm-12 col-sm-6">
+                        <div class="input-group">
+                        	<input class="form-control" id="date" placeholder="Date" name="date" type="date"/>
+                        	<div class="input-group-addon">
+                        		<span class="glyphicon glyphicon-calendar"></span>
+                        	</div>
+                        </div>
+                      </div>
+                      <div class="col-xsm-12 col-sm-6">
+                        <div class="input-group">
+                          <input class="form-control" id="time" placeholder="Time" name="time" type="time"/>
+                          <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <span><div class="alert alert-warning alert-dismissible" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <b>Warning: </b> Please <a href="#phone"><b>call</b></a> us to reserve more than six guests
+                    </div></span>
+                    <label style="padding-left: 4em"><button type="submit" class="btn btn-default">Submit</button></label>
+                  </form>
+                  <button type="button" class="btn btn-default btn-sm"
+                      data-dismiss="modal">Cancel</button>
+           </div>
+       </div>
+       </div>
+     </div>
+   </div>
     <div class = "container">
       <div class="row row-content">
        <div class="col-xs-12">
@@ -180,49 +242,83 @@
         </div>
    </div>
 
-        <div class="row row-content" id="reserve">
-          <div class="col-xsm-12 col-sm-4"><h2>Reserve a Table</h2></div>
-          <div class="col-xsm-12 col-sm-8">
-            <form>
-              <label>
-                <div class="col-xsm-12 col-sm-4">Number of Guests</div>
-                <div class="col-xsm-12 col-sm-8">
-                  <label class="radio-inline"><input type="radio" name="People" value="1">1</label>
-                  <label class="radio-inline"><input type="radio" name="People" value="2">2</label>
-                  <label class="radio-inline"><input type="radio" name="People" value="3">3</label>
-                  <label class="radio-inline"><input type="radio" name="People" value="4">4</label>
-                  <label class="radio-inline"><input type="radio" name="People" value="5">5</label>
-                  <label class="radio-inline"><input type="radio" name="People" value="6">6</label>
-                </div>
-              </label><br>
-              <label>
-                <div class="col-xsm-12 col-sm-6">
-                  <div class="input-group">
-                  	<input class="form-control" id="date" placeholder="Date" name="date" type="date"/>
-                  	<div class="input-group-addon">
-                  		<span class="glyphicon glyphicon-calendar"></span>
-                  	</div>
-                  </div>
-                </div>
-                <div class="col-xsm-12 col-sm-6">
-                  <div class="input-group">
-                    <input class="form-control" id="time" placeholder="Time" name="time" type="time"/>
-                    <div class="input-group-addon">
-                      <span class="glyphicon glyphicon-time"></span>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label style="padding-left: 4em"><button type="submit" class="btn btn-default">Submit</button></label>
-            </form>
-            <span><div class="alert alert-warning alert-dismissible" role="alert">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <b>Warning: </b> Please <a href="#phone"><b>call</b></a> us to reserve more than six guests
-            </div></span>
-          </div>
-
+   <div class="container">
+     <div class = "container">
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3 col-sm-push-9">
+            <p style="padding:20px;"></p>
+            <h3 align="center">Our Lipsmacking Culinary Creations</h3>
         </div>
+        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+          <div class="media">
+             <div class="media-left media-middle">
+                 <a href="#">
+                 <img class="media-object img-thumbnail"
+                  src="img/uthappizza.png" alt="Uthappizza">
+                 </a>
+             </div>
+             <div class="media-body">
+                 <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span><span class="badge" style="margin-left:16em">$4.99</span></h2>
+                 <p>A unique combination of Indian Uthappam (pancake) and
+                   Italian pizza, topped with Cerignola olives, ripe vine
+                   cherry tomatoes, Vidalia onion, Guntur chillies and
+                   Buffalo Paneer.</p>
+                 <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+             </div>
+         </div>
 
+       </div>
+     </div>
+     <div class="row row-content">
+      <div class="col-xs-12 col-sm-3">
+          <p style="padding:20px;"></p>
+          <h3 align="center">This Month's Promotions</h3>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="media">
+          <div class="media-body">
+            <h2>Weekend Grand Buffet <span class="label label-danger">New</span></h2>
+            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+          </div>
+          <div class="media-right media-middle">
+              <a href="#">
+              <img class="media-object img-thumbnail"
+               src="img/buffet.png" alt="Alberto Somayya">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-content">
+      <div class="col-xs-12 col-sm-3 col-sm-push-9">
+        <p style="padding:20px;"></p>
+        <h3 align="center">Meet our Culinary Specialists</h3>
+    </div>
+    <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+      <div class="media">
+         <div class="media-left media-middle">
+             <a href="#">
+             <img class="media-object img-thumbnail"
+              src="img/alberto.png" alt="Alberto Somayya">
+             </a>
+         </div>
+         <div class="media-body">
+             <h2 class="media-heading">Alberto Somayya</h2>
+             <h4>Executive Chef</h4>
+             <p>Award winning three-star Michelin chef with wide
+              International experience having worked closely with
+              whos-who in the culinary world, he specializes in
+               creating mouthwatering Indo-Italian fusion experiences.
+              </p>
+             <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+         </div>
+       </div>
+     </div>
+   </div>
+    </div>
+    </div>
+  </div>
 
     <footer style="background-color: #00BBBB">
         <div class = "container">
